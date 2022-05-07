@@ -1,0 +1,6 @@
+project: 
+  type: website
+  title: "Quarto RLadies"
+  output-dir: docs
+
+editor: visual

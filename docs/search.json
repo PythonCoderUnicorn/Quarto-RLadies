@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "QPres",
+    "section": "Quarto",
+    "text": "Quarto\nThis is a presentation about:\n\nbasic presentation slides\nthemed presentation"
+  },
+  {
+    "objectID": "index.html#theme-options",
+    "href": "index.html#theme-options",
+    "title": "QPres",
+    "section": "Theme Options",
+    "text": "Theme Options\nadd these to yaml section theme: dark\n\nbeige = old book bg, white font, brown progress bar\nblood = black bg, white font, red progress bar\ndark = black bg, white font, blue progress bar\ndefault\nleague = black gradient bg, white font, blue progress bar\nmoon = teal bg, white font, blue progress bar\nnight = black bg, white font, yellow progress bar\nserif = light bg, black font, grey progress bar\nsimple = light bg, black font, blue progress bar\nsky = light blue gradient bg, black font, teal progress bar\nsolarized = beige bg, teal font, blue progress bar"
+  },
+  {
+    "objectID": "index.html#slide-backgrounds",
+    "href": "index.html#slide-backgrounds",
+    "title": "QPres",
+    "section": "Slide backgrounds",
+    "text": "Slide backgrounds\nLet your background slide with CSS, rgb(), #hex or hsl()\n\nadd slide bg color {background-color=\"purple\"}"
+  },
+  {
+    "objectID": "index.html#image-background",
+    "href": "index.html#image-background",
+    "title": "QPres",
+    "section": "Image background",
+    "text": "Image background\nanother option is\nImage background tiled {background-image=\"image.png\" background-size=\"100px\" \nbackground-repeat=\"repeat\"}"
+  },
+  {
+    "objectID": "index.html#video-background",
+    "href": "index.html#video-background",
+    "title": "QPres",
+    "section": "Video background",
+    "text": "Video background\nthe video is on a loop muted {background-video='video.mp4'}\nbelieve it is only .mp4 files that work"
+  },
+  {
+    "objectID": "index.html#bullets",
+    "href": "index.html#bullets",
+    "title": "QPres",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "QPres",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 3\n\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  <chr>      <int> <dbl> <chr>      <chr>      <chr>          <dbl> <chr> <chr> \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 <NA>       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 <NA>       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# … with 5 more variables: homeworld <chr>, species <chr>, films <list>,\n#   vehicles <list>, starships <list>"
+  },
+  {
+    "objectID": "index.html#pause-for-effect",
+    "href": "index.html#pause-for-effect",
+    "title": "QPres",
+    "section": "pause, for effect",
+    "text": "pause, for effect\nyou can pause the …\n\nthe content, you know\n\nit takes 4 :::: for a new page\nit takes 3 ::: for column section\n\n\nColumns left | right\nLeft column\nlorem ipsum yadda\n\nright column\nlorem ipsum squareroot sum"
+  },
+  {
+    "objectID": "index.html#got-too-much-content",
+    "href": "index.html#got-too-much-content",
+    "title": "QPres",
+    "section": "Got too much content?",
+    "text": "Got too much content?\nuse the class ## Small Title {.smaller}\nneed to add smaller: true in yaml section"
+  },
+  {
+    "objectID": "index.html#scrollable-title",
+    "href": "index.html#scrollable-title",
+    "title": "QPres",
+    "section": "Scrollable Title",
+    "text": "Scrollable Title\ncan you find scroll 10 ?\n\nscroll 1\nscroll 2\nscroll 3\nscroll 4\nscroll 5\nscroll 6\nscroll 7\nscroll 8\nscroll 9\nscroll 10 you won!\n\nneed to add scrollable: true in yaml section"
+  },
+  {
+    "objectID": "index.html#speaker-notes",
+    "href": "index.html#speaker-notes",
+    "title": "QPres",
+    "section": "Speaker Notes",
+    "text": "Speaker Notes\nOh speaker, here are your notes. Press the S key for speaker view\n\nnote: these are notes about the speaker notes. This section takes 3 :::"
+  },
+  {
+    "objectID": "index.html#footnote",
+    "href": "index.html#footnote",
+    "title": "QPres",
+    "section": "Footnote",
+    "text": "Footnote\n\nThe Death Star is under construction1\nif you want footnotes included\nadd reference-location: document in the yaml\n\n\n\nFootnotes in Star Wars\nthe third Death Star"
+  },
+  {
+    "objectID": "index.html#footer-logo",
+    "href": "index.html#footer-logo",
+    "title": "QPres",
+    "section": "Footer & Logo",
+    "text": "Footer & Logo\nGlobally add a footer & logo to all slides\n\njust add\nlogo: mylogo.png\nfooter: \"footer text\"\nin the yaml section"
+  },
+  {
+    "objectID": "index.html#custom-footer",
+    "href": "index.html#custom-footer",
+    "title": "QPres",
+    "section": "Custom Footer",
+    "text": "Custom Footer\nyou can have customized footers !\n::: footer\n  this is a special request footer\n:::\n\nthis is a special footer"
+  },
+  {
+    "objectID": "index.html#highlighters",
+    "href": "index.html#highlighters",
+    "title": "QPres",
+    "section": "Highlighters",
+    "text": "Highlighters\nYou have special code that needs some focus on, then use code-line-numbers in the {} code block.\nPython Code, this highlight the random range function call, this argument can take a range “4-5” if you wanted.\nimport numpy as np\n\nr = np.arange(1,5, 0.5)\nr"
+  },
+  {
+    "objectID": "index.html#put-it-on-my-tab",
+    "href": "index.html#put-it-on-my-tab",
+    "title": "QPres",
+    "section": "Put it on my Tab",
+    "text": "Put it on my Tab\nYou can add tabbed content to slides with tabsets\n\nTab ATab B\n\n\ncontent for Tab A\nI have a secret to tell, go to Tab B\n\n\ncontent for Tab B\nTab A is only tab visible when in pdf format"
+  },
+  {
+    "objectID": "index.html#print-to-pdf",
+    "href": "index.html#print-to-pdf",
+    "title": "QPres",
+    "section": "Print to pdf",
+    "text": "Print to pdf\noptional print arguments in yaml\n\nshow-notes: false\nslide-number: true\npdf-max-pages-per-slide\npdf-separate-fragments\n\nThis works in Chrome\n\nNavigation Menu\nopen browser print dialog\nchange the destination to save as PDF\nchange layout to landscape\nchange the margins to none\nenable background graphics\nclick save"
+  },
+  {
+    "objectID": "index.html#chalkboard",
+    "href": "index.html#chalkboard",
+    "title": "QPres",
+    "section": "chalkboard",
+    "text": "chalkboard\nToggle canvas C\nToggle chalkboard B\nreset drawings backspace\nclear drawings del\ndownload drawings D\ncycle colors fwd/back X/Y"
+  },
+  {
+    "objectID": "index.html#multiplex",
+    "href": "index.html#multiplex",
+    "title": "QPres",
+    "section": "multiplex",
+    "text": "multiplex\nrendering slides outputs presentation.html and presentation-speaker.html\nrequirement is having a url . Having your own multiplex id and secret go to multiplex-glitch"
+  },
+  {
+    "objectID": "index.html#animation-1.0",
+    "href": "index.html#animation-1.0",
+    "title": "QPres",
+    "section": "Animation 1.0",
+    "text": "Animation 1.0\nLevel 1"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "QPres",
+    "section": "",
+    "text": "Level 1\nLevel 2"
+  },
+  {
+    "objectID": "index.html#animate",
+    "href": "index.html#animate",
+    "title": "QPres",
+    "section": "Animate !",
+    "text": "Animate !\npart 1\n\nAnimating content"
+  },
+  {
+    "objectID": "index.html#animate-1",
+    "href": "index.html#animate-1",
+    "title": "QPres",
+    "section": "Animate !",
+    "text": "Animate !\npart 2\n\nAnimating content"
+  },
+  {
+    "objectID": "index.html#code-animation",
+    "href": "index.html#code-animation",
+    "title": "QPres",
+    "section": "Code Animation",
+    "text": "Code Animation\n# load the library which has Star Wars dataset"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "QPres",
+    "section": "",
+    "text": "Star Wars dataset\n# load the library which has Star Wars dataset\ndplyr::starwars"
+  },
+  {
+    "objectID": "index.html#fragments",
+    "href": "index.html#fragments",
+    "title": "QPres",
+    "section": "Fragments",
+    "text": "Fragments\nthe details for slide animations are in the section called Fragments\n\n\n\n\nFade in > turn green > strike > fade out"
+  },
+  {
+    "objectID": "index.html#revealjs-plugins",
+    "href": "index.html#revealjs-plugins",
+    "title": "QPres",
+    "section": "revealjs plugins",
+    "text": "revealjs plugins\nif you want to add more revealjs plugins beyond the popular ones included in Quarto go to revealjs plugins\nand to add them\nformat: \n  revealjs:\n    revealjs-plugins:\n      - myplugin"
+  },
+  {
+    "objectID": "index.html#knitrkable",
+    "href": "index.html#knitrkable",
+    "title": "QPres",
+    "section": "knitr::kable",
+    "text": "knitr::kable\n\n\n\n\n\nspecies\nn\nmean_heigth\nmean_mass\n\n\n\n\nHuman\n35\n177\n83\n\n\nDroid\n6\n131\n70\n\n\nGungan\n3\n209\n74\n\n\nKaminoan\n2\n221\n88\n\n\nMirialan\n2\n168\n53\n\n\nTwi’lek\n2\n179\n55\n\n\nWookiee\n2\n231\n124\n\n\nZabrak\n2\n173\n80"
+  },
+  {
+    "objectID": "index.html#dtdatatable",
+    "href": "index.html#dtdatatable",
+    "title": "QPres",
+    "section": "DT::datatable",
+    "text": "DT::datatable"
+  },
+  {
+    "objectID": "index.html#gtgt",
+    "href": "index.html#gtgt",
+    "title": "QPres",
+    "section": "gt::gt()",
+    "text": "gt::gt()\n\n\n\n\n\n  \n  \n    \n      species\n      n\n      mean_heigth\n      mean_mass\n    \n  \n  \n    Human\n35\n177\n83\n    Droid\n6\n131\n70\n    Gungan\n3\n209\n74\n    Kaminoan\n2\n221\n88\n    Mirialan\n2\n168\n53\n    Twi'lek\n2\n179\n55\n    Wookiee\n2\n231\n124\n    Zabrak\n2\n173\n80"
+  },
+  {
+    "objectID": "index.html#reactablereactable",
+    "href": "index.html#reactablereactable",
+    "title": "QPres",
+    "section": "reactable::reactable",
+    "text": "reactable::reactable\n\n\n\n\n\n\n\n\n\nHello footer world!"
+  }
+]
