@@ -1,0 +1,377 @@
+---
+title: "QPres"
+format: 
+  revealjs:
+    theme: [default, RLadies.scss]  # dark
+    scrollable: true
+    incremental: true
+    slide-number: c/t # c/t | c | h/v | h.v
+    slide-tone: true
+    show-slide-number: all # print (in pdf) | speaker (only)
+    logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
+    footer: "Hello footer world!"
+    preview-links: true
+    chalkboard: true
+    multiplex: true # audience can follow along w/ mobile devices
+    transition: slide # slide # none | fade | convex | concave | zoom
+    fragments: true
+    
+editor: visual
+author: "Quarto"
+---
+
+## Quarto
+
+This is a presentation about:
+
+-   basic presentation slides
+-   themed presentation
+
+## Theme Options
+
+add these to yaml section `theme: dark`
+
+-   beige = old book bg, white font, brown progress bar
+-   blood = black bg, white font, red progress bar
+-   dark = black bg, white font, blue progress bar
+-   default
+-   league = black gradient bg, white font, blue progress bar
+-   moon = teal bg, white font, blue progress bar
+-   night = black bg, white font, yellow progress bar
+-   serif = light bg, black font, grey progress bar
+-   simple = light bg, black font, blue progress bar
+-   sky = light blue gradient bg, black font, teal progress bar
+-   solarized = beige bg, teal font, blue progress bar
+
+## Slide backgrounds {background-color="purple"}
+
+Let your background slide with CSS, `rgb()`, `#hex` or `hsl()`
+
+-   add slide bg color `{background-color="purple"}`
+
+## Image background {background-image="MiR-logo2.png" background-size="500px"}
+
+another option is
+
+    Image background tiled {background-image="image.png" background-size="100px" 
+    background-repeat="repeat"}
+
+## Video background {background-video="video.mp4" background-video-loop="true" background-video-muted="true"}
+
+the video is on a loop muted `{background-video='video.mp4'}`
+
+believe it is only .mp4 files that work
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library(dplyr)
+
+number1 = 1
+number2 = 2
+
+number2 + number1
+
+dplyr::starwars %>% 
+  head()
+
+```
+
+------------------------------------------------------------------------
+
+this has no \# header
+
+-   level 1 alert
+
+-   level 2 alert
+
+------------------------------------------------------------------------
+
+4 dashes equal new slide page
+
+------------------------------------------------------------------------
+
+you can explicitly list increment/ decrement by using a `div` with a `class` like
+
+    :::{.incremental}
+
+    - bullet point
+
+    :::
+
+::: incremental
+-   add `incremental: true` after/ underneath
+
+-   `format: revealjs:` in the yaml top section
+:::
+
+## pause, for effect
+
+you can pause the ...
+
+. . .
+
+the content, you know
+
+-   it takes 4 :::: for a new page
+-   it takes 3 ::: for column section
+
+::: columns
+Columns left \| right
+
+::: {.column width="40%"}
+Left column
+
+lorem ipsum yadda
+:::
+
+::: {.column width="60%"}
+right column
+
+lorem ipsum squareroot sum
+:::
+:::
+
+## Got too much content?
+
+use the class `## Small Title {.smaller}`
+
+need to add `smaller: true` in yaml section
+
+## Scrollable Title {.scrollable}
+
+can you find scroll 10 ?
+
+-   scroll 1
+-   scroll 2
+-   scroll 3
+-   scroll 4
+-   scroll 5
+-   scroll 6
+-   scroll 7
+-   scroll 8
+-   scroll 9
+-   scroll 10 you won!
+
+need to add `scrollable: true` in yaml section
+
+## Speaker Notes
+
+Oh speaker, here are your notes. Press the `S` key for speaker view
+
+::: notes
+*note*: these are notes about the speaker notes. This section takes 3 :::
+:::
+
+## Footnote
+
+-   The Death Star is under construction[^1]
+-   if you want footnotes included
+-   add `reference-location: document` in the yaml
+
+[^1]: the third Death Star
+
+::: aside
+Footnotes in Star Wars
+:::
+
+## Footer & Logo
+
+Globally add a footer & logo to all slides
+
+-   just add
+-   `logo: mylogo.png`
+-   `footer: "footer text"`
+-   in the yaml section
+
+## Custom Footer
+
+you can have customized footers !
+
+    ::: footer
+      this is a special request footer
+    :::
+
+::: footer
+this is a special footer
+:::
+
+## Highlighters
+
+You have special code that needs some focus on, then use `code-line-numbers` in the `{}` code block.
+
+Python Code, this highlight the random range function call, this argument can take a range "4-5" if you wanted.
+
+``` {.python code-line-numbers="4"}
+import numpy as np
+
+r = np.arange(1,5, 0.5)
+r
+```
+
+## Put it on my Tab
+
+You can add tabbed content to slides with tabsets
+
+::: panel-tabset
+### Tab A
+
+content for `Tab A`
+
+I have a secret to tell, go to Tab B
+
+### Tab B
+
+content for `Tab B`
+
+Tab A is only tab visible when in pdf format
+:::
+
+## Print to pdf
+
+optional print arguments in yaml
+
+-   `show-notes: false`
+-   `slide-number: true`
+-   `pdf-max-pages-per-slide`
+-   `pdf-separate-fragments`
+
+This works in Chrome
+
+-   Navigation Menu
+-   open browser print dialog
+-   change the destination to **save as PDF**
+-   change layout to **landscape**
+-   change the margins to **none**
+-   enable background graphics
+-   click **save**
+
+## chalkboard {chalkboard-buttons="true"}
+
+Toggle canvas `C`
+
+Toggle chalkboard `B`
+
+reset drawings `backspace`
+
+clear drawings `del`
+
+download drawings `D`
+
+cycle colors fwd/back `X`/`Y`
+
+## multiplex
+
+rendering slides outputs `presentation.html` and `presentation-speaker.html`
+
+**requirement** is having a `url` . Having your own multiplex `id` and `secret` go to [multiplex-glitch](https://reveal-multiplex.glitch.me/)
+
+## Animation 1.0 {auto-animate="true"}
+
+Level 1
+
+##  {auto-animate="true"}
+
+Level 1
+
+Level 2
+
+## Animate ! {auto-animate="true"}
+
+part 1
+
+::: {style="margin-top: 100px"}
+Animating content
+:::
+
+## Animate ! {auto-animate="true"}
+
+part 2
+
+::: {style="margin-top:200px font-size: 24em; color: lime;"}
+Animating content
+:::
+
+## Code Animation {auto-animate="true"}
+
+``` r
+# load the library which has Star Wars dataset
+```
+
+##  {auto-animate="true" font-size="14px"}
+
+Star Wars dataset
+
+``` r
+# load the library which has Star Wars dataset
+dplyr::starwars
+```
+
+## Fragments
+
+the details for slide animations are in the section called [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
+
+::: {.fragment .fade-in}
+::: {.fragment .highlight-green}
+::: {.fragment .strike}
+::: {.fragment .semi-fade-out}
+Fade in \> turn green \> strike \> fade out
+:::
+:::
+:::
+:::
+
+## revealjs plugins
+
+if you want to add more revealjs plugins beyond the popular ones included in Quarto go to [revealjs plugins](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/plugins)
+
+and to add them
+
+    format: 
+      revealjs:
+        revealjs-plugins:
+          - myplugin
+          
+
+## knitr::kable
+
+```{r}
+# the best one for slides
+tab <- starwars |>
+  tidyr::drop_na(species) |> 
+  group_by(species) |>
+  summarise(n = n(),
+            mean_heigth = round(mean(height, na.rm = TRUE)),
+            mean_mass = round(mean(mass, na.rm = TRUE))
+            ) |> 
+  slice_max(order_by = n, n = 4) 
+knitr::kable(tab)
+```
+
+## DT::datatable
+
+```{r}
+DT::datatable(tab)
+```
+
+## gt::gt()
+
+```{r}
+gt::gt(tab)
+```
+
+## reactable::reactable
+
+```{r}
+
+reactable::reactable(tab)
+```
